@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Othello</title>
+  <!-- Lien vers la feuille de style CSS -->
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <!-- En-tête du jeu -->
+  <header>
+    <h1>Othello</h1>
+  </header>
+
+  <!-- Texte pour afficher le joueur courant -->
+  <div id="status">Tour du joueur : Noir</div>
+
+  <!-- Affiche le score (nombre de pions) -->
+  <div id="score">⚫ Noir : 2 | ⚪ Blanc : 2</div>
+
+  <!-- Bouton pour recommencer la partie -->
+  <div id="controls">
+    <button id="restartBtn" onclick="restartGame()"><img src="img/recommencez.png" width="20" height="20">Rejouer la partie</button>
+  </div>
+
+  <!-- Tableau HTML qui contiendra le plateau de jeu -->
+  <table id="board"></table>
+
+  <!-- Script JavaScript qui contient toute la logique du jeu -->
+  <script src="Script.js"></script>
+</body>
+</html>
