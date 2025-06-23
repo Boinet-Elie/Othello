@@ -11,13 +11,24 @@ body {
 header {
     background-color: #000;
     padding: 20px;
-    text-align: center;
+    display: flex;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+#logo {
+    margin-right: 20px;
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    align-self: flex-start;
 }
   
 header h1 {
-    margin: 0;
+    margin: 0 auto;             
     font-size: 2.5em;
+    flex: 1;                    
+    text-align: center;
 }
   
 /* Texte du joueur courant */
